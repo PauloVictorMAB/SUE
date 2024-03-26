@@ -1,0 +1,255 @@
+body{
+    background: rgba(14,7,134,1);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+/* INDEX */
+
+
+.menu-index{
+  height: 80px;
+  display: flex;
+}
+
+.menu-index img{
+  margin-right: 30px;
+  height: 100%;
+  width: auto;
+}
+
+.menu-index a{
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn-cadastro:hover{
+  color: gainsboro;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.btn-consulta:hover{
+  color: gainsboro;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.list-cadastro, .list-consulta {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  z-index: 1;
+  background-color: transparent;
+  columns: 2;
+}
+
+.list-cadastro a,li {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.list-cadastro a:hover{
+  cursor: pointer;
+  color: gainsboro;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.list-consulta a,li {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.list-consulta a:hover{
+  cursor: pointer;
+  color: gainsboro;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.show {
+  display: block;
+}
+
+/* FIM INDEX */
+/* INICIO LOGIN */
+
+
+.login-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}   
+
+.box-login{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: black;
+    padding: 40px;
+    box-shadow: 0 0 10px white;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px;
+    gap: 5px;
+    width: 30%;
+}
+
+.box-login h3{
+    font-size: 30px;
+}
+
+.box-login label{
+    font-size: 12px;
+}
+
+.box-login input{
+    border-radius: 8px;
+    height: 25px;
+}
+
+.box-login .button{
+    height: 30px;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(14,7,134);
+    background: linear-gradient(90deg, rgba(14,7,134,1) 25%, rgba(50,9,121,1) 56%, rgba(0,212,255,1) 97%);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* FIM LOGIN */
+
+/* INICIO CADASTROS */
+
+.cadastro {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+fieldset {
+    flex: 1;
+    min-width: 40%;
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+  }
+  
+.cadastro label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+.cadastro input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+.cadastro button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    margin: 1% 40%;
+  }
+  
+  .cadastro button:hover {
+    background-color: #45a049;
+  }
+
+#cad-disciplina input, textarea{
+    width: 100%;
+    height: auto;
+  }
+
+#cad-disciplina button{
+    width: auto;
+    margin: 10px auto;
+    display: block;
+    
+  }
+
+/* FIM CADASTROS */
+/* INICIO CONSULTAS */
+
+.tabelas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+table{
+  margin: 10px;
+  border: 2px solid gray;
+  background: white;
+  color: black;
+}
+
+#tabela-disciplinas{
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+#tabela-disciplinas tr,td, th{
+  border: 1px solid gray;
+  padding: 5px;
+  text-align: center;
+}
+#tabela-disciplinas th{
+  background: rgb(94, 94, 94);
+}
+/* FIM CONSULTAS */
+
+/* BOTÃO FIXO */
+#back{
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário de Dados Pessoais</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px 50px;
+    padding: 0;
+  }
+    h1{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" id="back">VOLTAR</a>
+   <h1>CADASTRO DE PROFESSORES</h1>
+   
+   <form action="#" method="post" class="cadastro">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+
+      <label for="nomeCompleto">Nome Completo:</label>
+      <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo" required>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+
+      <label for="nacionalidade">Nacionalidade:</label>
+      <input type="text" id="nacionalidade" name="nacionalidade" required>
+
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+
+      <label for="rg">RG:</label>
+      <input type="text" id="rg" name="rg" placeholder="00.000.000-00" required>
+
+      <label for="nomeMae">Nome da Mãe:</label>
+      <input type="text" id="nomeMae" name="nomeMae" required>
+
+      <label for="nomePai">Nome do Pai:</label>
+      <input type="text" id="nomePai" name="nomePai" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço</legend>
+
+      <label for="rua">Rua:</label>
+      <input type="text" id="rua" name="rua" required>
+
+      <label for="numero">Número:</label>
+      <input type="text" id="numero" name="numero" required>
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required>
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" required>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" required>
+
+      <label for="complemento">Complemento:</label>
+      <input type="text" id="complemento" name="complemento">
+    </fieldset>
+
+    <fieldset>
+      <legend>Contato</legend>
+
+      <label for="telefone1">Telefone 1:</label>
+      <input type="tel" id="telefone1" name="telefone1" required>
+
+      <label for="telefone2">Telefone 2:</label>
+      <input type="tel" id="telefone2" name="telefone2">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Formação</legend>
+  
+        <label for="grauInstrucao">Grau de Instrução:</label>
+        <input type="text" id="grauInstrucao" name="grauInstrucao" required>
+  
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso" required>
+  
+        <label for="instituicao">Instituição:</label>
+        <input type="text" id="instituicao" name="instituicao" required>
+  
+        <label for="dataInicio">Data de Início:</label>
+        <input type="date" id="dataInicio" name="dataInicio" required>
+  
+        <label for="dataConclusao">Data de Conclusão:</label>
+        <input type="date" id="dataConclusao" name="dataConclusao">
+      </fieldset>
+  
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
